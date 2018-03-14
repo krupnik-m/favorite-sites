@@ -1,0 +1,125 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:focus,
+  &:active {
+    outline: none !important;
+  }
+}
+
+html {
+  font-size: $font-size-root;
+  background-color: $background-color;
+  min-width: $min-body-width;
+}
+
+body{
+  background-color: $background-color;
+  color: $text-color;;
+  font-family: $font-family-sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+
+table {
+ th{
+   font-weight: 600;
+ }
+  td {
+    font-size: 1rem;
+  }
+}
+
+pre {
+  background-color: $gray-200;
+  border-radius: $border-radius;
+  padding: 1.5rem;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea, h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans-serif;
+  margin-top: 20px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+h2 {
+  color: #0f6ab4;
+  font-weight: 600;
+  font-size: 24px;
+}
+h3 {
+  font-size: 24px;
+  margin: 0 0 15px;
+  color: #333;
+}
+h5 {
+  display: inline-block;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.ibox-content {
+  border: $border-box;
+  background-color: #ffffff;
+  color: inherit;
+  padding: 10px;
+  clear: both;
+
+}
+#page-wrapper {
+  border-radius: 0;
+  padding: 0 15px;
+  transition: left .6s;
+  z-index: 3;
+  margin: 0 0 0 $width-nav;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+}
+.wrapper-content{
+  padding: 20px 10px 40px;
+}
+.ibox {
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+.ibox-content {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+}
+.ibox-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 15px 15px 7px;
+  min-height: 48px;
+  border-width: 1px 0 0;
+}

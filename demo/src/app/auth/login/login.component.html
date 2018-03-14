@@ -1,0 +1,64 @@
+
+        <h1>User Favorite Sites <br> - <br> Sign In </h1>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <fieldset>
+            <div
+              class="md-form"
+              [ngClass]="{'has-error': form.get('login').invalid && form.get('login').touched}">
+              <i class="fa fa-user prefix grey-text"></i>
+              <input mdbActive
+                     formControlName="login"
+                     type="text"
+                     id="form1"
+                     class="form-control">
+              <label for="form1" class="">Enter your login</label>
+              <span class="form-help-text"
+                *ngIf="form.get('login')['errors'] && form.get('login')['errors']['required']">
+                Login is required
+              </span>
+               <span class="form-help-text"
+                     *ngIf="form.get('login')['errors'] && form.get('login')['errors']['minlength']">
+                The Login should consist more than 3 letters
+              </span>
+               <span class="form-help-text"
+                     *ngIf="form.get('login')['errors'] && form.get('login')['errors']['maxlength']">
+                The Login should consist less than 30 letters
+              </span>
+            </div>
+            <div class="md-form"
+                 [ngClass]="{'has-error': form.get('password').invalid && form.get('password').touched}">
+              <i class="fa fa-lock prefix grey-text"></i>
+              <input mdbActive
+                     formControlName="password"
+                     type="password"
+                     id="form2"
+                     class="form-control">
+              <label for="form2" class="">Enter your Password</label>
+              <span class="form-help-text"
+                    *ngIf="form.get('password')['errors'] && form.get('password')['errors']['required']">
+                Password is required
+              </span>
+              <span class="form-help-text"
+                    *ngIf="form.get('password')['errors'] && form.get('password')['errors']['minlength']">
+                The Password should consist more than 3 letters
+              </span>
+               <span class="form-help-text"
+                     *ngIf="form.get('password')['errors'] && form.get('password')['errors']['maxlength']">
+                The Password should consist less than 30 letters
+              </span>
+            </div>
+            <div
+              class="alert alert-{{message.type}}"
+              *ngIf="message.text">
+              {{message.text}}
+            </div>
+            <div class="pt-15">
+            <button type="submit"
+                    [disabled]="form.invalid"
+                    class="btn btn-block btn-outline-primary" mdbRippleRadius>Login</button>
+              </div>
+          </fieldset>
+        </form>
+        <a [routerLink]="['/forgot']" class="forgot">Forgot Password?</a>
+

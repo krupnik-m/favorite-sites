@@ -1,0 +1,31 @@
+.navbar.static-top {
+  background: center no-repeat url(../../../../../assets/img/logo.png) #fff;
+  background-size: 50px;
+  width: 100%;
+}
+
+@media (max-width: 750px){
+
+  .navbar.static-top {
+    background-size: 0px;
+    transition: all 1s;
+  }
+  .navbar-top-links a.btn{
+    display: none;
+    font-size: 1px;
+    width: 37px;
+    height: 37px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    color: #fff !important;
+    .fa{
+      color: #196cb0;
+      font-size: 19px;
+      margin-top: 1px;
+      margin-left: 11px;
+    }
+  }
+
+
+}

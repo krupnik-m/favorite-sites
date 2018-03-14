@@ -1,0 +1,31 @@
+<div class="ibox ">
+  <div class="ibox-title d-flex justify-content-between">
+    <h5>Favorite
+    Sites
+    </h5>
+  </div>
+  <div class="ibox-content">
+    <div class="ng-isolate-scope">
+      <div class="tab-content">
+        <div id="contact-1" class="tab-pane active">
+          <div class="row">
+            <div class="col-lg-12">
+              <table class="prof-table" width="100%" >
+                <tbody>
+                <tr *ngFor="let site of sites">
+                  <td><a href="{{site}}" target="_blank">{{site}}</a></td>
+                </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+

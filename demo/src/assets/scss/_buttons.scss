@@ -1,0 +1,38 @@
+.bg-primary {
+  color: #fff;
+  background-color: $indigo !important;
+}
+.btn{
+  border-radius: $border-radius;
+  text-transform: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 2.13rem;
+}
+.btn[class*="btn-outline-"] {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.btn-outline-primary {
+  border: 1px solid $indigo;
+  color: $indigo !important;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+  background-color: $white;
+  border-color: $indigo;
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.z-depth-1, .jumbotron, .navbar, .badge, .chip, .btn, .btn-primary:not([disabled]):not(.disabled):active, .btn-primary.active:not([disabled]):not(.disabled), .show > .btn-primary.dropdown-toggle, .card:not([class*="card-outline-"]), .pagination .active .page-link, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.z-depth-1-half, .btn:hover, .btn:active, .btn:focus, .modal-dialog .modal-content, .modal-dialog.cascading-modal .modal-header, ul.instagram-photos li img, .media .media-left img, .tooltip-inner {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:active:focus, .btn-outline-primary.active {
+  color: $indigo;
+  border-color: $indigo;
+}

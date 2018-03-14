@@ -1,0 +1,34 @@
+
+
+.top-login {
+  background: url(../../assets/img/logo.png) center no-repeat #0f6ab4;
+  height: 70px;
+  width: 100%;
+  background-size: 50px;
+}
+
+.ibox-content {
+  border: 1px solid #e7eaec;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 15px 0 55px;
+}
+
+.login-content{
+  padding: 100px 20px 20px 20px;
+  max-width: 100%;
+}
+.loggin__copyright {
+  color: #0f6ab4;
+  margin-top: 11px;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .login-content {
+    padding: 20px;
+  }
+}

@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import {AuthService} from "../../../../shared/services/auth.service";
 
 
-
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
@@ -11,8 +10,8 @@ import {AuthService} from "../../../../shared/services/auth.service";
 })
 export class TopbarComponent implements OnInit {
 
-  constructor ( private auth:AuthService,
-                private router:Router) {
+  constructor(private auth:AuthService,
+              private router:Router) {
   }
 
   ngOnInit() {
@@ -23,17 +22,14 @@ export class TopbarComponent implements OnInit {
     this.router.navigate(['/login']);
 
   }
-  minimalize(){
+
+  minimalize() {
     let el = document.getElementById("body");
     if (el.classList.contains("mini")) {
       el.classList.remove("mini");
-
-
-      if (!el.classList.contains("mini")){
-        el.classList.add("mini");
-      }
-    } else if (el.classList.contains("mini")) {
-      el.classList.remove("mini");
+    }
+    else {
+      el.classList.add("mini");
     }
   }
 }

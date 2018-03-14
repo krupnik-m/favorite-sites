@@ -1,4 +1,4 @@
-# Favorite Sites
+# User Favorite Sites
 
 ### Sites screens 
 ![Alt text](/screenshots/screen0.png?raw=true "Optional Title")
